@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0gm1evz" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.11.0">
+  <decision id="Decision_1ekjksp" name="Decision 1">
+    <decisionTable id="DecisionTable_097s512" hitPolicy="FIRST">
+      <input id="Input_1" biodi:width="192" camunda:inputVariable="inputVariable">
+        <inputExpression id="InputExpression_1" typeRef="integer">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="result" typeRef="string" />
+      <rule id="DecisionRule_1ih93ld">
+        <inputEntry id="UnaryTests_1e0s56q">
+          <text>1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1u3mpvb">
+          <text>"1"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tvece6">
+        <inputEntry id="UnaryTests_1z03mjb">
+          <text>2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_09zbdo7">
+          <text>"2"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mklw17">
+        <inputEntry id="UnaryTests_07f5z0j">
+          <text>3</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12mx66w">
+          <text>"3"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1l20k3b">
+        <inputEntry id="UnaryTests_1pqv6w8">
+          <text>4</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0de1kbg">
+          <text>"4"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10rfblr">
+        <inputEntry id="UnaryTests_12tlg2o">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_093zanl">
+          <text>"other"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_1ekjksp">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
