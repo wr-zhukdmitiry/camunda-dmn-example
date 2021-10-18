@@ -22,9 +22,17 @@ repositories {
 }
 
 dependencies {
+	implementation("org.camunda.bpm.dmn:camunda-engine-dmn:7.16.0")
+	implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter:7.16.0")
+	implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:7.16.0")
+
+	implementation("com.sun.xml.bind:jaxb-impl:3.0.2")
+	implementation("com.sun.xml.bind:jaxb-core:3.0.2")
+
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("org.camunda.bpm.dmn:camunda-engine-dmn:7.16.0")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	compileOnly("org.postgresql:postgresql:42.2.24")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")

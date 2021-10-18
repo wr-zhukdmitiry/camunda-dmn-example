@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    password: postgres
+    username: postgres
+camunda:
+  bpm:
+    admin-user:
+      id: admin
+      password: admin
+    auto-deployment-enabled: false
+    database:
+      type: postgres
+      schema-name: public
+      table-prefix: public.
